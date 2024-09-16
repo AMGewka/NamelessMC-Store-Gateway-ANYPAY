@@ -2,10 +2,16 @@
     <div class="card shadow border-left-primary">
         <div class="card-body">
             <h5><i class="icon fa fa-info-circle"></i> Платежная система <a href="https://anypay.io/panel/register" target="_blank">ANYPAY</a></h5></br>
-            - <b>Электронные платежи</b>: <b>Карты РФ</b>, <b>Карты Украины</b>, <b>СБП</b>, <b>Perfect Money</b>, <b>Volet</b> и <b>Оплата скинами Steam</b></br>
-            - <b>Криптовалюты</b>: <b>Bitcoin</b>, <b>Bitcoin Cash</b>, <b>Ethereum (ETH)</b>, <b>Tether (TRC-20)</b>, <b>Tether (ERC-20)</b>, <b>Tether (BSC)</b>, <b>Tether (Polygon)</b>, <b>Tether (TON)</b>, <b>Binance Coin (BSC)</b>, <b>Notcoin</b>, <b>TRON</b>, <b>Litecoin</b>, <b>Dogecoin</b>, <b>TON</b> и <b>DASH</b></br></br>
-            - Для регистрации в ANYPAY используйте <a href="https://anypay.io/panel/register" target="_blank">эту ссылку</a>.</br>
-            - Модуль прошел тесты и работает на версиях магазина 1.7.1 - 1.8.0.
+            - <b>Банковские карты</b>: <b>Карты РФ</b>, <b>Карты Украины</b> и <b>Карты Казахстана</b></br>
+            - <b>Электронные платежи</b>: <b>Сбербанк</b> и <b>СБП</b></br>
+            - <b>Электронные кошельки</b>: <b>ЮMoney</b>, <b>Webmoney</b>, <b>Advcash</b> и <b>Perfect Money</b></br>
+            - <b>Сотовые операторы</b>: <b>Мегафон</b>, <b>Билайн</b> и <b>Теле2</b></br>
+            - <b>Криптовалюты</b>: <b>Bitcoin</b>, <b>Bitcoin Cash</b>, <b>Ethereum</b>, <b>Litecoin</b>, <b>Dash</b>, <b>Zcash</b>, <b>Dogecoin</b>, <b>Tether</b> и <b>Toncoin</b></br></br>
+            - Для регистрации в <b>ANYPAY</b> используйте <a href="https://anypay.io/panel/register" target="_blank">эту ссылку</a>.</br>
+            - Модуль прошел тесты и работает на версиях магазина 1.7.1 и выше.</br>
+            - <b>URL Оповещения:</b> https://<Ваш домен>/store/listener/?gateway=ANYPAY</br>
+            - <b>URL успешной оплаты:</b> https://<Ваш домен>/store/checkout/?do=complete</br>
+            - <b>URL неудачной оплаты:</b> На ваш выбор :)
         </div>
     </div>
 
