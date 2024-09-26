@@ -4,7 +4,7 @@
  *
  * @package Modules\Store
  * @author AMGewka
- * @version 1.8.1
+ * @version 1.8.2
  * @license MIT
  */
 class ANYPAY_Gateway extends GatewayBase {
@@ -12,13 +12,12 @@ class ANYPAY_Gateway extends GatewayBase {
     public function __construct() {
         $name = 'ANYPAY';
         $author = '<a href="https://github.com/AMGewka" target="_blank" rel="nofollow noopener">AMGewka</a>';
-        $gateway_version = '1.8.1';
+        $gateway_version = '1.8.2';
         $store_version = '1.7.1';
         $settings = ROOT_PATH . '/modules/Store/gateways/ANYPAY/gateway_settings/settings.php';
 
         parent::__construct($name, $author, $gateway_version, $store_version, $settings);
     }
-
     public function onCheckoutPageLoad(TemplateBase $template, Customer $customer): void {}
 
     public function processOrder(Order $order): void {
@@ -26,7 +25,7 @@ class ANYPAY_Gateway extends GatewayBase {
         $secret_key = StoreConfig::get('ANYPAY.secret1_key');
         
         if ($projectId == null || empty($projectId)) {
-            $this->addError('Администрация не завершила настройку данного шлюза!');
+            $this->addError('The administration has not completed the configuration of this gateway!');
             return;
         }
 
@@ -40,7 +39,7 @@ class ANYPAY_Gateway extends GatewayBase {
 
         // Add the email parameter if it's not empty
         if (empty($email)) {
-            $email = 'admin@kenigcraft.ru';
+            $email = StoreConfig::get('ANYPAY.admin_email');
         }
 
         $arr_sign = array( 

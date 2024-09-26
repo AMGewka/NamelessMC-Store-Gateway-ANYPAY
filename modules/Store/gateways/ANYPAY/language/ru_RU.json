@@ -1,0 +1,17 @@
+{
+    "shopid": "ID Магазина",
+    "secret": "Секретный ключ",
+    "reemail": "Почта администратора сайта",
+    "enablegateway": "Включить способ оплаты",
+    "gatewayname": " Платежная система <a href=\"https://anypay.io/panel/register\" target=\"_blank\">ANYPAY</a>",
+    "bankcard": "<b>Банковские карты</b>: <b>Карты РФ</b>, <b>Карты Украины</b> и <b>Карты Казахстана</b>",
+    "onlinepay": "<b>Электронные платежи</b>: <b>Сбербанк</b> и <b>СБП</b>",
+    "onlinewal": "<b>Электронные кошельки</b>: <b>ЮMoney</b>, <b>Webmoney</b>, <b>Advcash</b> и <b>Perfect Money</b>",
+    "mobileoper": "<b>Сотовые операторы</b>: <b>Мегафон</b>, <b>Билайн</b> и <b>Теле2</b>",
+    "crypto": "<b>Криптовалюты</b>: <b>Bitcoin</b>, <b>Bitcoin Cash</b>, <b>Ethereum</b>, <b>Litecoin</b>, <b>Dash</b>, <b>Zcash</b>, <b>Dogecoin</b>, <b>Tether</b> и <b>Toncoin</b>",
+    "gatewaylink": "Для регистрации в <b>ANYPAY</b> используйте <a href=\"https://anypay.io/panel/register\" target=\"_blank\">эту ссылку</a>.",
+    "gatewaytest": "Модуль прошел тесты и работает на версиях магазина 1.7.1 и выше.",
+    "alerturl": "<b>URL Оповещения:</b> https://ВАШ_ДОМЕН/store/listener/?gateway=ANYPAY",
+    "sucurl": "<b>URL успешной оплаты:</b> https://ВАШ_ДОМЕН/store/checkout/?do=complete",
+    "failurl": "<b>URL неудачной оплаты:</b> На ваш выбор :)"
+}
