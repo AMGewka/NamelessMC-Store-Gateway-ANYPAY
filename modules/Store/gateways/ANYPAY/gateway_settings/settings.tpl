@@ -18,7 +18,7 @@
     <br />
 
 
-<form action="" method="post"><div class="form-group"><label for="inputANYPAYId">{$SHOP_ID}</label>
+<form action="" method="post"><div class="form-group"><label for="inputANYPAYShopId">{$SHOP_ID}</label>
 <input class="form-control" type="text" id="inputANYPAYShopId" name="shopid_key" value="{$SHOP_ID_VALUE}" placeholder="{$SHOP_ID}">
 </div>
 
