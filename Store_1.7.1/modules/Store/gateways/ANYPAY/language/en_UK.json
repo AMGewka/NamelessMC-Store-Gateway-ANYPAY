@@ -1,0 +1,17 @@
+{
+    "shopid": "Store ID",
+    "secret": "Secret key",
+    "reemail": "Site administrator email",
+    "enablegateway": "Enable payment method",
+    "gatewayname": " Payment system <a href=\"https://anypay.io/panel/register\" target=\"_blank\">ANYPAY</a>",
+    "bankcard": "<b>Bank cards</b>: <b>Russian Federation cards</b>, <b>Ukrainian cards</b> and <b>Kazakhstan cards</b>",
+    "onlinepay": "<b>Electronic payments</b>: <b>Sberbank</b> and <b>SBP</b>",
+    "onlinewal": "<b>Electronic wallets</b>: <b>ЮMoney</b>, <b>Webmoney</b>, <b>Advcash</b> and <b>Perfect Money</b>",
+    "mobileoper": "<b>Mobile operators</b>: <b>Megafon</b>, <b>Beeline</b> and <b>Tele2</b>",
+    "crypto": "<b>Cryptocurrencies</b>: <b>Bitcoin</b>, <b>Bitcoin Cash</b>, <b>Ethereum</b>, <b>Litecoin</b>, <b>Dash</b>, <b>Zcash</b>, <b>Dogecoin</b>, <b>Tether</b> and <b>Toncoin</b>",
+    "gatewaylink": "To register in <b>ANYPAY</b>, use <a href=\"https://anypay.io/panel/register\" target=\"_blank\">this link</a>.",
+    "gatewaytest": "The module has passed tests and works on store versions 1.7.1 and below.",
+    "alerturl": "<b>Alert URL:</b> https://YOUR_DOMAIN/store/listener/?gateway=ANYPAY",
+    "sucurl": "<b>Successful payment URL:</b> https://YOUR_DOMAIN/store/checkout/?do=complete",
+    "failurl": "<b>Failed payment URL:</b> Your choice :)"
+}

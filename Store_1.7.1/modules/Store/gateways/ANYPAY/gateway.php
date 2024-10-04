@@ -4,7 +4,7 @@
  *
  * @package Modules\Store
  * @author AMGewka
- * @version 1.8.2
+ * @version 1.8.3
  * @license MIT
  */
 class ANYPAY_Gateway extends GatewayBase {
@@ -12,7 +12,7 @@ class ANYPAY_Gateway extends GatewayBase {
     public function __construct() {
         $name = 'ANYPAY';
         $author = '<a href="https://github.com/AMGewka" target="_blank" rel="nofollow noopener">AMGewka</a>';
-        $gateway_version = '1.8.2';
+        $gateway_version = '1.8.3';
         $store_version = '1.7.1';
         $settings = ROOT_PATH . '/modules/Store/gateways/ANYPAY/gateway_settings/settings.php';
 
@@ -21,8 +21,8 @@ class ANYPAY_Gateway extends GatewayBase {
     public function onCheckoutPageLoad(TemplateBase $template, Customer $customer): void {}
 
     public function processOrder(Order $order): void {
-        $projectId = StoreConfig::get('ANYPAY.shopid_key');
-        $secret_key = StoreConfig::get('ANYPAY.secret1_key');
+        $projectId = StoreConfig::get('ANYPAY/shopid_key');
+        $secret_key = StoreConfig::get('ANYPAY/secret1_key');
         
         if ($projectId == null || empty($projectId)) {
             $this->addError('The administration has not completed the configuration of this gateway!');
@@ -39,7 +39,7 @@ class ANYPAY_Gateway extends GatewayBase {
 
         // Add the email parameter if it's not empty
         if (empty($email)) {
-            $email = StoreConfig::get('ANYPAY.admin_email');
+            $email = StoreConfig::get('ANYPAY/admin_email');
         }
 
         $arr_sign = array( 
@@ -72,8 +72,8 @@ class ANYPAY_Gateway extends GatewayBase {
     }
 
     public function handleListener(): void {
-        $projectId = StoreConfig::get('ANYPAY.shopid_key');
-        $secretKey = StoreConfig::get('ANYPAY.secret1_key');
+        $projectId = StoreConfig::get('ANYPAY/shopid_key');
+        $secretKey = StoreConfig::get('ANYPAY/secret1_key');
         $status = 'paid';
 
         $arr_ip = array(
